@@ -1,11 +1,18 @@
+import { getIconCollections } from '@egoist/tailwindcss-icons'
+
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/alpine
   extends: '@nuxt-themes/alpine',
 
   modules: [
-    // https://github.com/nuxt-modules/plausible
-    '@nuxtjs/plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools'
-  ]
+    '@nuxt/ui',
+    '@nuxt/devtools',
+  ],
+  ui: { 
+    icons: {
+      collections: {
+        ...getIconCollections(['ic']),
+      },
+    },
+  }
 })
