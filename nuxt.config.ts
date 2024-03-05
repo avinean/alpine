@@ -6,7 +6,10 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    '@nuxt/devtools',
+    // https://github.com/nuxt-modules/plausible
+    '@nuxtjs/plausible',
+    // https://github.com/nuxt/devtools
+    '@nuxt/devtools'
   ],
   ui: { 
     icons: {
